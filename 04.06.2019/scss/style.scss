@@ -1,0 +1,89 @@
+@import "partials/variables";
+body {
+    font-family: $font-family;
+}
+
+header {
+    .navbar {
+        .navbar-brand {
+            font-size: $font-medium !important;
+            color: $font-color !important;
+            &:hover {
+                color: white !important;
+            }
+        }
+        .navbar-nav {
+            display: flex;
+            .nav-link {
+                color: $font-color !important;
+                &:hover {
+                    color: white !important;
+                }
+            }
+        }
+    }
+}
+
+#masthead {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    position: relative;
+    .cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(92, 77, 66, .8);
+    }
+    h1 {
+        font-size: $font-large*1.5;
+        color: white;
+    }
+    hr {
+        width: 10%;
+        height: 2px;
+        background-color: $primary-color;
+    }
+    p {
+        font-size: $font-large/2-2;
+        font-weight: 100;
+        color: $font-color;
+    }
+    a {
+        text-decoration: none;
+        padding: 20px 35px;
+        background-color: $primary-color;
+        color: white;
+        border-radius: 25px;
+    }
+}
+
+// about section
+#about {
+    padding: 100px;
+    background-color: $primary-color;
+    h1 {
+        font-size: $font-large/1.8;
+        color: white;
+    }
+    hr {
+        width: 10%;
+        height: 2px;
+        background-color: white;
+    }
+    p {
+        font-size: $font-large/2-2;
+        font-weight: 100;
+        color: $font-color;
+    }
+    a {
+        text-decoration: none;
+        padding: 20px 35px;
+        background-color: white;
+        color: $primary-color;
+        border-radius: 25px;
+    }
+}
